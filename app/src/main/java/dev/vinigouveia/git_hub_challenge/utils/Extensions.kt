@@ -9,3 +9,14 @@ fun Throwable?.getErrorMessage(): Int {
         else -> R.string.unknown_error_message
     }
 }
+
+fun String.formatCompany(): String {
+    val separatedString = this.split(", ")
+    var formattedString = ""
+
+    separatedString.forEach {
+        formattedString += "$it \n"
+    }
+
+    return formattedString
+}
