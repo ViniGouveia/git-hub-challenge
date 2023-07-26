@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">git-hub-challenge</string>
+    <string name="app_name">GitHubChallenge</string>
+
+    <string name="search_bar_placeholder">Search</string>
+
+    <string name="user_item_list_details">Click for more details</string>
+
+    <string name="connection_error_message">Ops… Failed to connect to the server.\nCheck your internet connection and tap here to try again!</string>
+    <string name="unknown_error_message">Ops… We got an unexpected error!\nTap here to try again!</string>
+    <string name="empty_users_list_error_message">No users found!\nPlease, try to search another username.</string>
+    <string name="empty_repositories_list_error_message">No repositories found!\nPlease, try to search another name.</string>
 </resources>
