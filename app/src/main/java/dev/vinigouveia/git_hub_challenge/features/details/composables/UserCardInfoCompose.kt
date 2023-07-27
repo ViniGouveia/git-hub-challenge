@@ -22,7 +22,6 @@ import dev.vinigouveia.git_hub_challenge.data.model.UserDetailsBO
 import dev.vinigouveia.git_hub_challenge.ui.theme.lightGray
 import dev.vinigouveia.git_hub_challenge.ui.theme.white
 import dev.vinigouveia.git_hub_challenge.utils.components.LoadImage
-import dev.vinigouveia.git_hub_challenge.utils.formatCompany
 import kotlin.math.min
 
 @Composable
@@ -61,7 +60,7 @@ fun UserInfoCard(userDetails: UserDetailsBO, scrollState: LazyListState) {
                         color = MaterialTheme.colorScheme.white
                     )
                     Text(
-                        text = userDetails.company.formatCompany(),
+                        text = userDetails.company,
                         style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Normal),
                         color = MaterialTheme.colorScheme.lightGray.copy(alpha = .7f)
                     )

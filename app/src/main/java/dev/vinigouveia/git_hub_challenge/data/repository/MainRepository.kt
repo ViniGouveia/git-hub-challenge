@@ -13,9 +13,9 @@ class MainRepository @Inject constructor(
     private var cachedUser = UserDetailsBO()
 
     suspend fun fetchUsers(): List<UserBO> {
-        val response = serviceApi.fetchUsers()
-        cachedUsersList = response.body().orEmpty().map(::UserBO)
-        return cachedUsersList
+        val response = serviceApi.fetchUsers().map(::UserBO)
+        cachedUsersList = response
+        return response
     }
 
     fun searchUser(username: String) = cachedUsersList.filter { it.username.contains(username) }
@@ -24,14 +24,15 @@ class MainRepository @Inject constructor(
         val userResponse = serviceApi.fetchUserInfo(username)
 
         val repositoriesResponse =
-            serviceApi.fetchUserRepositories(username)
+            serviceApi.fetchUserRepositories(username).map(::RepositoryBO)
 
-        cachedUser = UserDetailsBO(
-            userResponse.body(),
-            repositoriesResponse.body()?.map { RepositoryBO(it) }.orEmpty()
+        val response = UserDetailsBO(
+            userResponse,
+            repositoriesResponse
         )
+        cachedUser = response
 
-        return cachedUser
+        return response
     }
 
     fun searchRepository(searchParam: String): UserDetailsBO {
