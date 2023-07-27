@@ -1,7 +1,7 @@
-<h1 align="start">Gir Hub Challenge</h1>
+<h1 align="start">Git Hub Challenge</h1>
 
 
-[![Build Status](https://app.bitrise.io/app/cb1a04c9-abce-4d4e-85f4-5ae7d23726cf/status.svg?token=pt5grWMxKNqLOr_ZpjjR6Q&branch=main)](https://app.bitrise.io/app/cb1a04c9-abce-4d4e-85f4-5ae7d23726cf)
+[![Build Status](https://app.bitrise.io/app/cb1a04c9-abce-4d4e-85f4-5ae7d23726cf/status.svg?token=pt5grWMxKNqLOr_ZpjjR6Q)](https://app.bitrise.io/app/cb1a04c9-abce-4d4e-85f4-5ae7d23726cf)
 
 <h1 align="start">Sobre</h1>
 
