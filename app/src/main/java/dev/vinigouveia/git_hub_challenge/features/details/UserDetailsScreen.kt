@@ -32,7 +32,6 @@ import dev.vinigouveia.git_hub_challenge.ui.theme.lightGray
 import dev.vinigouveia.git_hub_challenge.ui.theme.white
 import dev.vinigouveia.git_hub_challenge.utils.components.CustomTopAppBar
 import dev.vinigouveia.git_hub_challenge.utils.components.SearchBarCompose
-import dev.vinigouveia.git_hub_challenge.utils.getErrorMessage
 import dev.vinigouveia.git_hub_challenge.utils.screens.EmptyListScreen
 import dev.vinigouveia.git_hub_challenge.utils.screens.ErrorScreen
 import dev.vinigouveia.git_hub_challenge.utils.screens.LoadingScreen
@@ -79,7 +78,7 @@ fun UserDetailsScreen(
                     }
                 }
 
-                screenState.error != null -> ErrorScreen(message = screenState.error.getErrorMessage()) {
+                screenState.error != 0 -> ErrorScreen(message = screenState.error) {
                     viewModel.handleIntent(UserDetailsIntent.FetchUserInfo)
                 }
 
