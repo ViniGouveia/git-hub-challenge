@@ -37,18 +37,28 @@ Na arquitetura do projeto, decidi focar no funcionamento e na manutenção do ap
 <h1 align="start">Features</h1>
 
 <p align="middle">
-    <img src="./resources/home_screen.jpg" width="360">
+    <img src="./resources/home_screen.png" width="360">
     <p style="text-align:center">Essa é uma representação da primeira tela que o usuário irá ver ao entrar na aplicação, listando os usuários retornados pela API.</p>
 </p>
 
 <p align="middle">
-    <img src="./resources/searched_users.jpg" width="360">
+    <img src="./resources/searched_users.png" width="360">
     <p style="text-align:center">Após realizar alguma busca, os usuários são filtrados e exibidos como no exemplo acima.</p>
 </p>
 
 <p align="middle">
-    <img src="./resources/search_feature.jpg" width="360">
+    <img src="./resources/search_feature.png" width="360">
     <p style="text-align:center">Essa é a tela onde são feitas as buscas no app. São exibidas as últimas buscas feitas pelo usuário. É possível limpar o campo e resetar a lista clicando no "x".</p>
+</p>
+
+<p align="middle">
+    <img src="./resources/user_details_screen.png" width="360">
+    <p style="text-align:center">Essa é a tela onde são apresentadas as informações do usuário, assim como a listagem de seus repositórios públicos.</p>
+</p>
+
+<p align="middle">
+    <img src="./resources/searched_repositories.png" width="360">
+    <p style="text-align:center">É possível filtrar a lista de repositórios através da search bar. É possível limpar o campo e resetar a lista clicando no "x".</p>
 </p>
 
 <h1 align="start">Continuous Integration</h1>
