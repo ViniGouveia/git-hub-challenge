@@ -25,6 +25,16 @@ O projeto foi um pouco desafiador, pois nunca tinha trabalhado diretamente com a
 - Por fim, execute o projeto em um dispositivo físico ou virtual.
 ```
 
+<p align="start">Para executar via terminal:</p>
+
+```
+Para a variante debug, utilizar o código:  
+./gradlew clean app:assembleDebug  
+
+Para a variante release, utilizar o código:  
+./gradlew clean app:assembleRelease
+```
+
 <h1 align="start">Explicação da arquitetura</h1>
 
 Na arquitetura do projeto, decidi focar no funcionamento e na manutenção do aplicativo, seguindo ao máximo os princípios SOLID e da Clean Architecture.
